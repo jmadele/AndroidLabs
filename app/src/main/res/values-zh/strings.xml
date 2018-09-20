@@ -2,4 +2,8 @@
 <resources>
     <string name="hello_message">你好</string>
     <string name="ButtonText">按钮</string>
+    <string name="Login">登陆</string>
+    <string name="password">密码</string>
+
+
 </resources>
