@@ -2,8 +2,20 @@
 <resources>
     <string name="hello_message">你好</string>
     <string name="ButtonText">按钮</string>
+
     <string name="Login">登陆</string>
     <string name="password">密码</string>
+
+    <string name="RadioButton">单选按钮</string>
+    <string name="CheckBox">复选框</string>
+    <string name="Switch"> 这是什么？</string>
+
+    <string name="dialog_message">信息内容</string>
+    <string name="dialog_title">信息标题</string>
+    <string name="cancel">取消</string>
+    <string name="ok">同意</string>
+    <string name="switch_on">开关-开</string>
+    <string name="switch_off">开关-关</string>
 
 
 </resources>

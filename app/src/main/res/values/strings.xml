@@ -3,10 +3,19 @@
     <string name="app_name">AndroidLabs</string>
     <string name="hello_message">Hello World!</string>
     <string name="ButtonText">I\'m a button</string>
+
     <string name="Login">Login</string>
     <string name="password">Password</string>
-    <string name="RadioButton">单选按钮</string>
-    <string name="CheckBox">复选框</string>
-    <string name="What_does_this_do"> 点击看详细内容</string>
+
+    <string name="RadioButton">RadioButton</string>
+    <string name="CheckBox">CheckBox</string>
+    <string name="Switch"> What does this do?</string>
+
+    <string name="dialog_message">dialog_message</string>
+    <string name="dialog_title">dialog_title</string>
+    <string name="cancel">cancel</string>
+    <string name="ok">ok</string>
+    <string name="switch_on">switch_on</string>
+    <string name="switch_off">switch_off</string>
 
 </resources>
