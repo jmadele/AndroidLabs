@@ -15,7 +15,12 @@
     <string name="dialog_title">dialog_title</string>
     <string name="cancel">cancel</string>
     <string name="ok">ok</string>
+
     <string name="switch_on">switch_on</string>
     <string name="switch_off">switch_off</string>
 
+    <string name="StartChat">Start Chat</string>
+
+
+    Chat
 </resources>

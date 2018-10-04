@@ -32,8 +32,9 @@ public class LoginActivity extends Activity {
             @Override
             public void onClick(View v) {
                 SharedPreferences.Editor editor = prefs.edit();
-                editor.putString("email",editText.getText().toString());
+                editor.putString("DefaultEmail",editText.getText().toString());
                 editor.commit();
+
                 Intent intent = new Intent (LoginActivity.this, StartActivity.class);
                 startActivity(intent);
             }
