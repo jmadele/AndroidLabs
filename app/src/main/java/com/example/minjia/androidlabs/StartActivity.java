@@ -39,6 +39,7 @@ public class StartActivity extends Activity {
                 Log.i("StartActivity", "User clicked Start Chat");
             }
         });
+    }
 
         public void onActivityResult ( int requestCode, int responseCode, Intent data){
             if (requestCode == 50 && responseCode == Activity.RESULT_OK) {

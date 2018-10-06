@@ -34,7 +34,6 @@ public class LoginActivity extends Activity {
                 SharedPreferences.Editor editor = prefs.edit();
                 editor.putString("DefaultEmail",editText.getText().toString());
                 editor.commit();
-
                 Intent intent = new Intent (LoginActivity.this, StartActivity.class);
                 startActivity(intent);
             }

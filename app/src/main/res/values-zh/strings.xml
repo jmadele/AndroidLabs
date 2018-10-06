@@ -17,7 +17,7 @@
     <string name="switch_on">开关-开</string>
     <string name="switch_off">开关-关</string>
 
-    <string name="StartButton">开始通话</string>
+    <string name="StartChat">开始通话</string>
 
 
 </resources>
