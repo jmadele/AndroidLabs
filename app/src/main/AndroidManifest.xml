@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".StartActivity"></activity>
+        <activity android:name=".StartActivity"/>
 
         <activity android:name=".LoginActivity">
             <intent-filter>
@@ -19,8 +19,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ListItemsActivity"></activity>
-        <activity android:name=".ChatWindow"></activity>
+        <activity android:name=".ListItemsActivity"/>
+        <activity android:name=".ChatWindow"/>
     </application>
 
 </manifest>

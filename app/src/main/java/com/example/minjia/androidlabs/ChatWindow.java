@@ -2,6 +2,7 @@ package com.example.minjia.androidlabs;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Button;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.content.Context;
+import java.util.ArrayList;
 
 public class ChatWindow extends Activity {
     //add class variables
@@ -32,13 +34,15 @@ public class ChatWindow extends Activity {
         final ChatAdapter messageAdapter = new ChatAdapter(this);
         myList.setAdapter(messageAdapter);
 
-        btn.setOnClickListener(new View.onClickListener() {
+
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String text = editText.getText().toString();
                 messages.add(text);
                 messageAdapter.notifyDataSetChanged();
                 editText.setText("");
+
             }
 
         });
@@ -61,7 +65,17 @@ private class ChatAdapter extends ArrayAdapter<String>{
         //step #9
         @Override
         public View getView(int position, View convertView, ViewGroup parent){
-            return ;
+            LayoutInflater inflater = ChatWindow.this.getLayoutInflater();
+            View result = null;
+            if(position%2==0){
+                result = inflater.inflate(R.layout.chat_row_incoming,null);
+            }
+            else
+                result = inflater.inflate(R.layout.chat_row_outgoing,null);
+
+            TextView message = (TextView)result.findViewById(R.id.message_text);
+            message.setText(getItem(position));
+            return result;
         }
         @Override
         public long getItemId(int position){
