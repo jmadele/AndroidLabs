@@ -16,30 +16,30 @@
 
         <ListView
             android:id="@+id/chatView"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
-            android:layout_above="@id/Send"
-            >
-
+            android:layout_above="@+id/Send">
         </ListView>
+
         <EditText
-            android:id="@+id/edittext"
+            android:id="@+id/editText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_toLeftOf="@id/Send"
+            android:layout_toLeftOf="@+id/Send"
             />
+
         <Button
             android:id="@+id/Send"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            />
+            android:layout_alignParentEnd="true"
+            android:text="@string/Send" />
 
 
     </RelativeLayout>

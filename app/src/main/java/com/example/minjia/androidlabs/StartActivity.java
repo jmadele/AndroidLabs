@@ -79,4 +79,4 @@ public class StartActivity extends Activity {
             Log.i(StartActivity, "In onDestroy()");
         }
     }
-}
+
