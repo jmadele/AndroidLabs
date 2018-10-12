@@ -42,7 +42,6 @@ public class ChatWindow extends Activity {
                 messages.add(text);
                 messageAdapter.notifyDataSetChanged();
                 editText.setText("");
-
             }
 
         });

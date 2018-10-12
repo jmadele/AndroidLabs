@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_weight="1"
-        android:layout_gravity="right"
+        android:gravity="right"
         android:visibility="visible" />
 
     <ImageView
