@@ -45,13 +45,13 @@ public class ListItemsActivity extends Activity {
                     CharSequence text = "Switch is on";
                     int duration = Toast.LENGTH_SHORT;
                     //if switch is checked, display "Switch on"
-                    Toast toast = Toast.makeText(getApplicationContext(),R.string.switch_on,duration);
+                    Toast toast = Toast.makeText(getApplicationContext(),text,duration);
                     toast.show();
                 }
                 else {
                     CharSequence text = "Switch is off";
                     int duration = Toast.LENGTH_LONG;
-                    Toast toast = Toast.makeText(getApplicationContext(),R.string.switch_off,duration);
+                    Toast toast = Toast.makeText(getApplicationContext(),text,duration);
                     toast.show();
                 }
             }

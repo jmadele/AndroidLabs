@@ -15,11 +15,11 @@ import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 import java.util.ArrayList;
 
-
 public class ChatWindow extends Activity {
     //add class variables
     static final String ACTIVITY_NAME="ChatWindowActivity";
     ListView myList;
+
     EditText editText ;
     Button btn;
     private ArrayList <String> messageList;
@@ -84,6 +84,7 @@ public class ChatWindow extends Activity {
         public int getCount(){
 
             return messageList.size();
+
         }
         //this function returns the item to show the list at the specified position
         @Override

@@ -21,8 +21,11 @@
 
     <string name="Send">SEND</string>
     <string name="StartChat">Start Chat</string>
+    <string name="checkWeather">Weather Forcast</string>
+    <string name="currentWeather">Current Weather</string>
+    <string name="currentTemperature">Current Temperature</string>
+    <string name="minTemperature">min Temperature</string>
+    <string name="maxTemperature">max Temperature</string>
+    <string name="windSpeed">Wind Speed</string>
 
-
-
-    Chat
 </resources>

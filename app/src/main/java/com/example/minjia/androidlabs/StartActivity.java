@@ -39,6 +39,17 @@ public class StartActivity extends Activity {
                 //Log.i("StartAvtivity", "User clicked Start Chat");
             }
         });
+        final Button WeatherForcast = findViewById(R.id.WeatherButton);
+        WeatherForcast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(StartActivity.this, WeatherActivity.class);
+                startActivityForResult(intent, 50);
+                Log.i("WeatherAvtivity", "User clicked to check weather");
+            }
+        });
+
+
     }
 
         public void onActivityResult ( int requestCode, int responseCode, Intent data){

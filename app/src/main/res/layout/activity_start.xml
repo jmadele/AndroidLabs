@@ -33,6 +33,11 @@
         android:text="@string/StartChat"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="155dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/WeatherButton"
+        android:text="@string/checkWeather" />
 
 
 </LinearLayout>

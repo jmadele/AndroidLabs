@@ -14,10 +14,10 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
     protected static final String TABLE_NAME="message";
     protected static final String KEY_ID ="id";
     protected static final String KEY_MESSAGE = "message";
-    protected static final int VERSION_NUM =3;
+    protected static final int VERSION_NUM =6;
 
-//    static final String DATABASE_CREATE = "Create table messages (KEY_ID integer primary key autoincrement,"
-//            + " KEY_MESSAGE text not null)";
+    static final String DATABASE_CREATE = "Create table message (id integer primary key autoincrement,"
+            + " message text not null)";
     //constructor
     public ChatDatabaseHelper(Context ctx) {
 
@@ -25,9 +25,9 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase db){
-       // db.execSQL(DATABASE_CREATE);
-        db.execSQL("Create table " + TABLE_NAME +
-                "(" + KEY_ID + " integer primary key autoincrement, " + KEY_MESSAGE + " text)" );
+        db.execSQL(DATABASE_CREATE);
+//        db.execSQL("Create table " + TABLE_NAME +
+//                "(" + KEY_ID + " integer primary key autoincrement, " + KEY_MESSAGE + " text)" );
         Log.i("ChatDatabaseHelper", "Calling onCreate");
     }
     @Override
