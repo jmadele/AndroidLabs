@@ -9,7 +9,7 @@
 
     <RelativeLayout
         android:id="@+id/bottomLayout"
-        android:layout_width="match_parent"
+        android:layout_width="400dp"
         android:layout_height="match_parent"
         android:layout_gravity="bottom" >
 
@@ -37,7 +37,17 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/chatView"
             android:text="@string/Send" />
     </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/chat_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_weight="3"
+        android:layout_toRightOf="@+id/bottomLayout"
+         />
 
 </LinearLayout>
