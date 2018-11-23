@@ -1,10 +1,8 @@
 package com.example.minjia.androidlabs;
 
 import android.database.sqlite.SQLiteOpenHelper;
-import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
-import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
@@ -15,6 +13,7 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
     protected static final String KEY_ID ="id";
     protected static final String KEY_MESSAGE = "message";
     protected static final int VERSION_NUM =6;
+    private static SQLiteDatabase db;
 
     static final String DATABASE_CREATE = "Create table message (id integer primary key autoincrement,"
             + " message text not null)";
@@ -26,8 +25,6 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db){
         db.execSQL(DATABASE_CREATE);
-//        db.execSQL("Create table " + TABLE_NAME +
-//                "(" + KEY_ID + " integer primary key autoincrement, " + KEY_MESSAGE + " text)" );
         Log.i("ChatDatabaseHelper", "Calling onCreate");
     }
     @Override
@@ -36,7 +33,16 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
     }
-    public void getMessage(SQLiteDatabase db){
+    public void getMessage( SQLiteDatabase db){
         Cursor cursor=db.query("select * from " + TABLE_NAME, null, null, null, null, null,null);
+
     }
+
+    public int delete(String table, String row, String[] str){
+
+            db.delete(ChatDatabaseHelper.TABLE_NAME, null, str);
+            return 0;
+    }
+
+
 }

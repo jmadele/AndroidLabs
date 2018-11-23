@@ -27,9 +27,10 @@
     <string name="minTemperature">min Temperature</string>
     <string name="maxTemperature">max Temperature</string>
     <string name="windSpeed">Wind Speed</string>
-    <string name = "MessageHere">Message Here</string>
+    <string name = "MessageContent">Message Content</string>
     <string name = "DeleteButton"> Delete this message</string>
     <string name = "MessageID"> Message ID</string>string>
+
 
 
 
