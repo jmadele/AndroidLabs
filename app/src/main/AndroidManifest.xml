@@ -23,7 +23,8 @@
         <activity android:name=".ListItemsActivity" />
         <activity android:name=".ChatWindow" />
         <activity android:name=".WeatherActivity" />
-        <activity android:name=".MessageDetails"></activity>
+        <activity android:name=".MessageDetails" />
+        <activity android:name=".TestToolbar"></activity>
     </application>
 
 </manifest>

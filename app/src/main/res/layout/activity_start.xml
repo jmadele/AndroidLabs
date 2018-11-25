@@ -38,6 +38,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/WeatherButton"
         android:text="@string/checkWeather" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TestToolbarBtn"
+        android:text="@string/TestToolbar" />
+
 
 
 </LinearLayout>

@@ -49,6 +49,16 @@ public class StartActivity extends Activity {
             }
         });
 
+        final Button TestToolbar = findViewById(R.id.TestToolbarBtn);
+        TestToolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(StartActivity.this, TestToolbar.class);
+                startActivityForResult(intent, 50);
+                Log.i("ToolBarActivity", "User clicked to test toolbar");
+            }
+        });
+
 
     }
 

@@ -10,12 +10,6 @@
     <string name="RadioButton">RadioButton</string>
     <string name="CheckBox">CheckBox</string>
     <string name="Switch"> What does this do?</string>
-
-    <string name="dialog_message">dialog_message</string>
-    <string name="dialog_title">dialog_title</string>
-    <string name="cancel">cancel</string>
-    <string name="ok">ok</string>
-
     <string name="switch_on">switch_on</string>
     <string name="switch_off">switch_off</string>
 
@@ -27,12 +21,24 @@
     <string name="minTemperature">min Temperature</string>
     <string name="maxTemperature">max Temperature</string>
     <string name="windSpeed">Wind Speed</string>
-    <string name = "MessageContent">Message Content</string>
-    <string name = "DeleteButton"> Delete this message</string>
-    <string name = "MessageID"> Message ID</string>string>
+    <string name="MessageContent">Message Content</string>
+    <string name="DeleteButton"> Delete this message</string>
+    <string name="MessageID"> Message ID</string>
+    <string name="Choice1">Choice 1</string>
+    <string name="Choice2">Choice 2</string>
+    <string name="Choice3">Choice 3</string>
+    <string name="TestToolbar">Test Toolbar</string>
+    <string name="add">add</string>
+    <string name="search">search</string>
+    <string name="settings">settings</string>
+    <string name="About">About</string>
+    <string name="snackbarBtn">snackbar button</string>
 
-
-
+    <string name="dialog_message">dialog_message</string>
+    <string name="dialog_title">Do you want to go back?</string>
+    <string name="cancel">cancel</string>
+    <string name="ok">ok</string>
+    <string name="textView">What is your new message?</string>
 
 
 </resources>
